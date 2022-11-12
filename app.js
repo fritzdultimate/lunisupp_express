@@ -5,11 +5,6 @@ const server = http.createServer((req, res) => {
         res.end("Home Page")
     }
     if(req.url === '/about') {
-        for(let i = 0; i < 1000; i++) {
-            for(let j = 0; j < 1000; j++) {
-                res.write(`${i}: ${j}\n`)
-            }
-        }
         res.end("About us page")
     }
 
